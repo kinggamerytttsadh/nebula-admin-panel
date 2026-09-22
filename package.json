@@ -1,0 +1,1 @@
+{"scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","start":"node server.js"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","express":"latest","better-sqlite3":"latest","bcryptjs":"latest","jsonwebtoken":"latest","cors":"latest"},"devDependencies":{}}

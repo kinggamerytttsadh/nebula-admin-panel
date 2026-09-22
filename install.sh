@@ -39,7 +39,7 @@ say "Preparing application files"
 if [[ -f "$SCRIPT_DIR/package.json" && -f "$SCRIPT_DIR/server.js" ]]; then
   cp -a "$SCRIPT_DIR/." "$TMP_DIR/app/"
 else
-  [[ "$REPO_URL" != "https://github.com/kinggamerytttsadh/nebula-admin-panel.git" ]] || die "Set NEBULA_REPO_URL to your GitHub repository URL before remote installation."
+  [[ "$REPO_URL" != "bash <(curl -fsSL https://raw.githubusercontent.com/kinggamerytttsadh/nebula-admin-panel/main/install.sh)" ]] || die "Set NEBULA_REPO_URL to your GitHub repository URL before remote installation."
   git clone --depth 1 "$REPO_URL" "$TMP_DIR/app"
 fi
 rm -rf "$TMP_DIR/app/.git" "$TMP_DIR/app/node_modules" "$TMP_DIR/app/dist" "$TMP_DIR/app/nebula.sqlite" "$TMP_DIR/app/data"
